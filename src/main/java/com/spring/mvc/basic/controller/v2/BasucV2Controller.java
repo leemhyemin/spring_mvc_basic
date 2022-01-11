@@ -15,6 +15,6 @@ public class BasucV2Controller {
 
     @GetMapping("/gugudan")
     public String gugudan() {
-        return ("/common/gugu3.html"); //경로
+        return "/common/gugu3.html";
     }
 }
