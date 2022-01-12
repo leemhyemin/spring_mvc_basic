@@ -54,8 +54,9 @@ public class BssicV1Controller {
     @GetMapping("/user/info")
     @ResponseBody
     public UserInfo userInfo() {
-        new UserInfo("고길동", "대전시 서구", 50, Arrays.asList("청소", "요리", "농구"));
-        return null;
+        return new UserInfo("고길동",
+                "대전시 서구",
+                50, Arrays.asList("청소", "요리", "농구"));
     }
 
     @GetMapping("/user/all")
